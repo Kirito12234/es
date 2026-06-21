@@ -17,7 +17,7 @@ Use one local `.env` file in the `backend` folder:
 
 ```env
 PORT=5000
-MONGO_URI=mongodb://127.0.0.1:27017/ecommerce_store
+MONGO_URI=mongodb+srv://<username>:<password>@newprojectweb.nqmrs6d.mongodb.net/ecommerce?retryWrites=true&w=majority
 JWT_SECRET=replace_with_a_long_random_secret
 JWT_EXPIRES_IN=30d
 CLIENT_URL=http://localhost:5173
