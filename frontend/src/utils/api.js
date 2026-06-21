@@ -1,4 +1,4 @@
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api'
+const API_URL = import.meta.env.VITE_API_URL || '/api'
 const TOKEN_STORAGE_KEY = 'redcart_auth_token'
 
 export const getToken = () => {
@@ -41,4 +41,4 @@ export const apiRequest = async (path, options = {}) => {
   return data
 }
 
-export const apiBaseUrl = API_URL.replace(/\/api$/, '')
+export const apiBaseUrl = API_URL.replace(/\/api\/?$/, '')
