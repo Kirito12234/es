@@ -13,14 +13,14 @@ The API runs on port `5000` by default.
 
 ## Environment
 
-Create `.env` from `.env.example`:
+Use one local `.env` file in the `backend` folder:
 
 ```env
 PORT=5000
 MONGO_URI=mongodb://127.0.0.1:27017/ecommerce_store
 JWT_SECRET=replace_with_a_long_random_secret
 JWT_EXPIRES_IN=30d
-CLIENT_URL=http://localhost:3000
+CLIENT_URL=http://localhost:5173
 ```
 
 ## Seed Data
